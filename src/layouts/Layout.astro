@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Intel Lunar Lake'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="page-grid">
+        <aside class="sidebar">
+          <p class="eyebrow">Dossier</p>
+          <h2>Intel Lunar Lake</h2>
+          <ul>
+            <li><a href="/IntelLunarLake">Sources</a></li>
+
+            <li><a href="/IntelLunarLake/AI">AI Acknowledgment</a></li>
+          </ul>
+        </aside>
+
+        <main class="content">
+          <slot />
+        </main>
+      </div>
+
+    </div>
+  </body>
+</html>

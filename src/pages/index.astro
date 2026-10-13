@@ -1,0 +1,159 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <p class="eyebrow"></p>
+  <h1>Intel Lunar Lake</h1>
+
+  <div class="links">
+    <a href="https://docs.google.com/presentation/d/1SSSFn0OPYop_EaiiZkTpzFisQe33PcOAaxnyIkahSwA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+      View Slides
+    </a>
+
+    <br />
+
+    <a href="/IntelLunarLake/slides.pdf" download>
+      Download Slides (PDF)
+    </a>
+  </div>
+
+  <section class="bibliography">
+    <h2>Annotated Bibliography</h2>
+
+    <ol>
+      <li>
+        <p>
+          <strong>Intel.</strong>
+          <a
+            href="https://www.intel.com/content/www/us/en/content-details/824430/2024-intel-tech-tour-next-gen-p-core-the-lion-cove-microarchitecture.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "2024 Intel Tech Tour: Next Gen P-Core—The Lion Cove Microarchitecture."
+          </a>
+          2024.
+        </p>
+        <p>
+          Intel's official presentation that explains Lion Cove's
+          architecture, including its front end, back end, and
+          performance/efficiency improvements over last gen.
+        </p>
+      </li>
+
+
+      <li>
+        <p>
+          <strong>Intel.</strong>
+          <a
+            href="https://www.intel.com/content/www/us/en/content-details/824436/2024-intel-tech-tour-lnl-ai-hardware-accelerators.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "2024 Intel Tech Tour: LNL AI Hardware Accelerators."
+          </a>
+          2024.
+        </p>
+        <p>
+          Another Intel presentation that covers Lunar Lake's GPU, AI hardware accelerators,
+          including the NPU, and explains how they support AI workloads
+          and improve performance and power efficiency.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <strong>Intel.</strong>
+          <a
+            href="https://www.intel.com/content/www/us/en/content-details/824443/2024-intel-tech-tour-lnl-architecture-session-highlights.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "2024 Intel Tech Tour: LNL Architecture Session Highlights."
+          </a>
+          2024.
+        </p>
+        <p>
+          Also an Intel presentation that summarizes more of Lunar Lake's architecture
+          and provides additional context on the extra features like NPUs and goes into more detail on power usage.
+        </p>
+      </li>
+
+
+      <li>
+        <p>
+          <strong>Lam, Chester.</strong>
+          <a
+            href="https://chipsandcheese.com/p/lion-cove-intels-p-core-roars"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Lion Cove: Intel's P-Core Roars."
+          </a>
+          <em>Chips and Cheese</em>, 27 September 2024.
+        </p>
+        <p>
+          This article examines Lion Cove's microarchitecture in great detail, including its
+          branch prediction, instruction pipeline, cache system, and many more. 
+          This was by far the most useful source for learning about the processor in detail, especially the branch prediction performance. It provides a detailed block diagram of the core with 
+          estimated numbers for cache sizes, queue sizes etc. 
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <strong>Lam, Chester.</strong>
+          <a
+            href="https://chipsandcheese.com/p/intels-lion-cove-p-core-and-gaming"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Intel's Lion Cove P-Core and Gaming Workloads."
+          </a>
+          <em>Chips and Cheese</em>, 6 July 2025.
+        </p>
+        <p>
+          This article analyzes Lion Cove's behavior in gaming workloads,
+          and has useful statistics on cache performance, branch prediction, and memory latency through independent testing.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <strong>Lam, Chester.</strong>
+          <a
+            href="https://chipsandcheese.com/p/skymont-intels-e-cores-reach-for-the-sky"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Skymont: Intel's E-Cores Reach for the Sky."
+          </a>
+          <em>Chips and Cheese</em>, 3 October 2024.
+        </p>
+        <p>
+          This article provides a very detailed analysis of the Skymont E core, including
+          its branch predictor, instruction decoding, back end etc.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <strong>W1zzard.</strong>
+          <a
+            href="https://www.techpowerup.com/review/intel-lunar-lake-technical-deep-dive/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Intel Lunar Lake Technical Deep Dive: So Many Revolutions in One Chip."
+          </a>
+          <em>TechPowerUp</em>, 3 June 2024.
+        </p>
+        <p>
+          This overview covers Lunar Lake's overall design, P cores, E cores,
+          cache organization, and architectural trade offs. Provided some useful insights.
+        </p>
+      </li>
+    </ol>
+  </section>
+</Layout>
